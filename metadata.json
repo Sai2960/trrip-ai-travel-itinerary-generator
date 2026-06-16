@@ -1,0 +1,10 @@
+{
+  "name": "Trrip AI Travel Itinerary Generator",
+  "description": "Premium SaaS travel companion that extracts booking info from PDFs or images using Gemini AI and designs complete day-wise itineraries.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

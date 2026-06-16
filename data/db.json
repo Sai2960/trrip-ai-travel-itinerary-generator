@@ -1,0 +1,239 @@
+{
+  "users": [
+    {
+      "name": "Henry",
+      "email": "h49127608@gmail.com",
+      "passwordHash": "1da68b9fcb8b3c10fb9125174d05919e53b0aff07321b07411360f8f5d57f31ce7c4a04d20e62ae2de4ee7af32202fc1e82170ded4719c3856d152b8b90ed884",
+      "salt": "f08cba1d3c6bc3acce892a19775d570d",
+      "id": "865d1942-c310-4a10-95ed-089fac7723a4",
+      "createdAt": "2026-06-15T15:14:38.522Z"
+    }
+  ],
+  "itineraries": [
+    {
+      "userId": "865d1942-c310-4a10-95ed-089fac7723a4",
+      "tripTitle": "Summer Adventure in Tokyo",
+      "departureCity": "Mumbai (BOM)",
+      "arrivalCity": "Tokyo (NRT)",
+      "startDate": "2026-06-14T00:00:00.000Z",
+      "endDate": "2026-06-29T00:00:00.000Z",
+      "generatedItinerary": {
+        "tripTitle": "Summer Adventure in Tokyo",
+        "departureCity": "Mumbai (BOM)",
+        "arrivalCity": "Tokyo (NRT)",
+        "startDate": "2026-06-14",
+        "endDate": "2026-06-29",
+        "preJourneySummary": "Your thrilling luxury journey to Tokyo (NRT) is officially mapped out! This itinerary combines standard check-in details, top-tier leisure walks, local food discoveries, and dynamic micro-excursions. Perfectly optimized for 16 days.",
+        "lodging": {
+          "name": "Aman Boutique Lodge",
+          "address": "Central Ginza Boulevard, Tokyo (NRT)",
+          "checkIn": "2026-06-14",
+          "checkOut": "2026-06-29",
+          "refCode": "MOCK-871"
+        },
+        "days": [
+          {
+            "dayNumber": 1,
+            "date": "14/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 2,
+            "date": "15/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 3,
+            "date": "16/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 4,
+            "date": "17/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 5,
+            "date": "18/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 6,
+            "date": "19/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 7,
+            "date": "20/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 8,
+            "date": "21/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 9,
+            "date": "22/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 10,
+            "date": "23/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 11,
+            "date": "24/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 12,
+            "date": "25/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 13,
+            "date": "26/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 14,
+            "date": "27/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 15,
+            "date": "28/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          },
+          {
+            "dayNumber": 16,
+            "date": "29/06/2026",
+            "title": "Exploring the hidden gems of Tokyo (NRT)",
+            "morning": "Begin with an orientation stroll around central Tokyo (NRT). Drop into a highly recommended local breakfast cafe, order native coffee/tea, and map out the morning scenic highlights.",
+            "afternoon": "Dive deep into standard neighborhood alleys, craft markets, or major history museums. Experience native crafts first-hand and grab a healthy lunch recommended by locals.",
+            "evening": "Secure dinner tables at a highly review-rated bistro in the city center. Walk through the beautifully lit canals or standard public boardwalks under the stars before rest."
+          }
+        ],
+        "dining": [
+          "Local street food stalls on the main Tokyo (NRT) market lane",
+          "The Terrace Lounge — popular for authentic traditional recipes",
+          "Café Horizon — top-rated specialty brews and local pastries"
+        ],
+        "culturalTips": [
+          "Keep a copy of your travel documents handy on your phone.",
+          "Cash is preferred for small transit rides and street vendor stalls.",
+          "Greet shopkeepers with classic local greetings."
+        ],
+        "packingList": [
+          "Light waterproof jacket for random showers",
+          "Power adapters and portable power banks",
+          "Comfortable sneakers for intensive walking routes"
+        ]
+      },
+      "extractedFromDocs": [],
+      "id": "f0496710-784b-4c79-b69c-7923d25c2ace",
+      "shareToken": "ac1efdc63515aa8c39bd6417",
+      "createdAt": "2026-06-15T15:15:59.989Z"
+    }
+  ],
+  "documents": [
+    {
+      "userId": "865d1942-c310-4a10-95ed-089fac7723a4",
+      "name": "Ticket.jpg",
+      "fileType": "image/jpeg",
+      "size": 71167,
+      "extractedInfo": {
+        "departureCity": "San Francisco (SFO)",
+        "arrivalCity": "Tokyo (NRT)",
+        "travelDates": "2026-07-20",
+        "flightNumber": "JL-001 (Japan Airlines)",
+        "bookingReference": "NH778X3",
+        "passengerName": "John Doe",
+        "notes": "Gate 4, Economy Class, Departs SFO 1:45 PM. Seat 22K."
+      },
+      "id": "88a7dc52-86eb-4440-89d4-76d1fa681f23",
+      "createdAt": "2026-06-15T15:14:47.098Z"
+    },
+    {
+      "userId": "865d1942-c310-4a10-95ed-089fac7723a4",
+      "name": "ana_airlines_ticket_nrt.pdf",
+      "fileType": "application/pdf",
+      "size": 142405,
+      "extractedInfo": {
+        "departureCity": "San Francisco (SFO)",
+        "arrivalCity": "Tokyo (NRT)",
+        "travelDates": "2026-07-20",
+        "flightNumber": "JL-001 (Japan Airlines)",
+        "bookingReference": "NH778X3",
+        "passengerName": "John Doe",
+        "notes": "Gate 4, Economy Class, Departs SFO 1:45 PM. Seat 22K."
+      },
+      "id": "6f1fdf0d-f6d4-4c9c-aa7b-51cadf230903",
+      "createdAt": "2026-06-15T15:20:16.944Z"
+    },
+    {
+      "userId": "865d1942-c310-4a10-95ed-089fac7723a4",
+      "name": "shibuya_sky_hotel_stay.png",
+      "fileType": "image/png",
+      "size": 89405,
+      "extractedInfo": {
+        "hotelName": "Aman Tokyo Resort",
+        "hotelAddress": "1-5-6 Otemachi, Chiyoda-ku, Tokyo, Japan",
+        "bookingReference": "AMN-998823",
+        "checkInDate": "2026-07-21",
+        "checkOutDate": "2026-07-27",
+        "passengerName": "John Doe",
+        "notes": "Deluxe King Room, high floor view. Breakfast included."
+      },
+      "id": "b850a364-8508-40ec-8d7f-046b7f38e0f0",
+      "createdAt": "2026-06-15T15:20:17.009Z"
+    }
+  ]
+}
