@@ -294,7 +294,6 @@ app.get('/api/itinerary/history', authMiddleware, async (req: AuthenticatedReque
   }
 });
 
-// Get User Uploaded Documents list (for attaching to an itinerary)
 app.get('/api/documents', authMiddleware, async (req: AuthenticatedRequest, res: Response) => {
   try {
     const documents = await Database.documents.findByUserId(req.user!.id);
@@ -302,6 +301,20 @@ app.get('/api/documents', authMiddleware, async (req: AuthenticatedRequest, res:
   } catch (err) {
     console.error('Documents list fetch failed', err);
     res.status(500).json({ error: 'Failed to retrieve documents history' });
+  }
+});
+
+// Delete Uploaded Document
+app.delete('/api/documents/:id', authMiddleware, async (req: AuthenticatedRequest, res: Response): Promise<any> => {
+  try {
+    const success = await Database.documents.delete(req.params.id, req.user!.id);
+    if (!success) {
+      return res.status(404).json({ error: 'Document not found or unauthorized' });
+    }
+    res.status(200).json({ message: 'Document deleted successfully' });
+  } catch (err) {
+    console.error('Document deletion error', err);
+    res.status(500).json({ error: 'Server failed to delete document' });
   }
 });
 

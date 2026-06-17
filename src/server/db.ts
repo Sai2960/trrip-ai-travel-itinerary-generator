@@ -303,7 +303,7 @@ export const Database = {
     },
   },
 
-  documents: {
+ documents: {
     async create(data: Omit<IUploadedDoc, 'id' | 'createdAt'>) {
       await connectDB();
       return UploadedDocModel.create(data);
@@ -318,5 +318,10 @@ export const Database = {
       await connectDB();
       return UploadedDocModel.findById(id);
     },
+
+    async delete(id: string, userId: string) {
+      await connectDB();
+      const result = await UploadedDocModel.deleteOne({ _id: id, userId });
+      return result.deletedCount > 0;
+    },
   },
-};

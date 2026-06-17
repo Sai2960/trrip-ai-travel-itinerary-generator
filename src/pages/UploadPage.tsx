@@ -13,7 +13,8 @@ import {
   Loader2, 
   AlertCircle,
   X,
-  Compass
+  Compass,
+  Trash2
 } from 'lucide-react';
 
 export default function UploadPage() {
@@ -184,6 +185,20 @@ export default function UploadPage() {
         return [...prev, id];
       }
     });
+  };
+
+  // Delete an uploaded document permanently
+  const handleDeleteDocument = async (e: React.MouseEvent, id: string) => {
+    e.stopPropagation(); // don't trigger row selection toggle
+    try {
+      const res = await authFetch(`/api/documents/${id}`, { method: 'DELETE' });
+      if (res.ok) {
+        setDocuments(prev => prev.filter(doc => doc.id !== id));
+        setSelectedDocIds(prev => prev.filter(docId => docId !== id));
+      }
+    } catch (err) {
+      console.error('Failed to delete document', err);
+    }
   };
 
   // Generate Itinerary API
@@ -394,11 +409,20 @@ export default function UploadPage() {
                         </div>
                       </div>
 
-                      {doc.extractedInfo.arrivalCity && (
-                        <span className="text-[9px] font-mono font-bold text-slate-400 bg-slate-900/80 px-2 py-0.5 border border-slate-850 rounded uppercase tracking-wider shrink-0">
-                          {doc.extractedInfo.arrivalCity}
-                        </span>
-                      )}
+                      <div className="flex items-center gap-2 shrink-0">
+                        {doc.extractedInfo.arrivalCity && (
+                          <span className="text-[9px] font-mono font-bold text-slate-400 bg-slate-900/80 px-2 py-0.5 border border-slate-850 rounded uppercase tracking-wider">
+                            {doc.extractedInfo.arrivalCity}
+                          </span>
+                        )}
+                        <button
+                          onClick={(e) => handleDeleteDocument(e, doc.id)}
+                          className="p-1.5 rounded-lg bg-slate-900 hover:bg-red-950/40 border border-slate-850 hover:border-red-900/50 text-slate-500 hover:text-red-400 transition cursor-pointer"
+                          title="Delete document"
+                        >
+                          <Trash2 className="w-3 h-3" />
+                        </button>
+                      </div>
                     </div>
                   );
                 })}
