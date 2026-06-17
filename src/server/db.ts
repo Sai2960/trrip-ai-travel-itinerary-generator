@@ -80,7 +80,11 @@ const UserSchema = new Schema<IUser>(
     passwordHash: { type: String, required: true },
     salt: { type: String, required: true },
   },
-  { timestamps: { createdAt: 'createdAt', updatedAt: false } }
+  {
+    timestamps: { createdAt: 'createdAt', updatedAt: false },
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
+  }
 );
 
 export const UserModel: Model<IUser> =
@@ -122,7 +126,11 @@ const UploadedDocSchema = new Schema<IUploadedDoc>(
     size: { type: Number, required: true },
     extractedInfo: { type: ExtractedInfoSchema, default: {} },
   },
-  { timestamps: { createdAt: 'createdAt', updatedAt: false } }
+  {
+    timestamps: { createdAt: 'createdAt', updatedAt: false },
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
+  }
 );
 
 export const UploadedDocModel: Model<IUploadedDoc> =
@@ -198,7 +206,11 @@ const ItinerarySchema = new Schema<IItinerary>(
     uploadedFileUrl: String,
     extractedFromDocs: [{ type: Schema.Types.ObjectId, ref: 'UploadedDoc' }],
   },
-  { timestamps: { createdAt: 'createdAt', updatedAt: false } }
+  {
+    timestamps: { createdAt: 'createdAt', updatedAt: false },
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
+  }
 );
 
 // Text index for search (FEATURE search)
