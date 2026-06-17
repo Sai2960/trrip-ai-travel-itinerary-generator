@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { User } from '../types.js';
 
+const API_BASE = import.meta.env.VITE_API_URL || '';
 interface AuthContextType {
   user: User | null;
   token: string | null;
@@ -26,8 +27,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
 
       try {
-        const response = await fetch('/api/auth/me', {
-          headers: {
+const response = await fetch(`${API_BASE}/api/auth/me`, {
+
+  headers: {
             'Authorization': `Bearer ${token}`,
             'x-auth-token': token
           }
@@ -80,8 +82,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       headers['x-auth-token'] = token;
     }
 
-    return fetch(url, {
-      ...options,
+return fetch(`${API_BASE}${url}`, {
+
+  ...options,
       headers
     });
   };
