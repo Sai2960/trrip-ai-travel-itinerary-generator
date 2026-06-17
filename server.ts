@@ -223,7 +223,10 @@ app.post('/api/itinerary/generate', authMiddleware, async (req: AuthenticatedReq
       for (const docId of docIds) {
         const doc = await Database.documents.findById(docId);
         // Ensure documents belong to requesting user
-        if (doc && doc.userId === req.user!.id) {
+        // FIX: doc.userId is an ObjectId, req.user!.id is a string virtual getter.
+        // Comparing them with === always returned false, silently dropping every
+        // uploaded document's extracted facts. Normalize both to strings.
+        if (doc && doc.userId.toString() === req.user!.id.toString()) {
           extractedFacts.push(doc.extractedInfo);
         }
       }
@@ -329,7 +332,10 @@ app.get('/api/itinerary/:id', authMiddleware, async (req: AuthenticatedRequest, 
     }
 
     // Guard access unless shared or belongs to owner
-    if (itinerary.userId !== req.user!.id) {
+    // FIX: itinerary.userId is an ObjectId, req.user!.id is a string virtual getter.
+    // Comparing them with !== always returned true, blocking every owner from
+    // viewing their own itinerary. Normalize both to strings before comparing.
+    if (itinerary.userId.toString() !== req.user!.id.toString()) {
       return res.status(403).json({ error: 'Forbidden. You do not own this itinerary' });
     }
 
