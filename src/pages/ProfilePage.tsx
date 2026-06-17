@@ -24,6 +24,15 @@ export default function ProfilePage() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // FIX: defensive formatter so a missing/unparseable createdAt never
+  // renders the literal text "Invalid Date" to the user.
+  const formatJoinDate = (value?: string | Date) => {
+    if (!value) return 'N/A';
+    const d = new Date(value);
+    if (isNaN(d.getTime())) return 'N/A';
+    return d.toLocaleDateString();
+  };
+
   const handleSeedMockData = async () => {
     setSeeding(true);
     setSuccess(false);
@@ -136,7 +145,7 @@ export default function ProfilePage() {
               </div>
               <div>
                 <p className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Created On</p>
-                <p className="text-xs font-mono text-slate-350">{new Date(user.createdAt).toLocaleDateString()}</p>
+                <p className="text-xs font-mono text-slate-350">{formatJoinDate(user.createdAt)}</p>
               </div>
             </div>
           </div>

@@ -92,7 +92,12 @@ async function authMiddleware(req: AuthenticatedRequest, res: Response, next: Ne
 
 // Authenticated current sessions check
 app.get('/api/auth/me', authMiddleware, async (req: AuthenticatedRequest, res: Response) => {
-  const { passwordHash, salt, ...safeUser } = req.user!;
+  // FIX: spreading a live Mongoose document instance directly is unreliable
+  // for fields like createdAt that come from schema timestamps. Convert to a
+  // plain object first via toObject() so every field (including createdAt)
+  // is guaranteed to be a real, serializable value.
+  const userObj = (req.user as any).toObject();
+  const { passwordHash, salt, ...safeUser } = userObj;
   res.status(200).json({ user: safeUser });
 });
 
@@ -124,7 +129,10 @@ app.post('/api/auth/register', async (req: Request, res: Response): Promise<any>
     });
 
     const token = signJWT({ userId: user.id });
-    const { passwordHash: _, salt: __, ...safeUser } = user;
+    // FIX: same toObject() safety conversion as above, so createdAt
+    // reaches the frontend as a real, properly serializable value.
+    const userObj = user.toObject();
+    const { passwordHash: _, salt: __, ...safeUser } = userObj;
 
     res.status(201).json({
       message: 'Account registered successfully',
@@ -157,7 +165,9 @@ app.post('/api/auth/login', async (req: Request, res: Response): Promise<any> =>
     }
 
     const token = signJWT({ userId: user.id });
-    const { passwordHash: _, salt: __, ...safeUser } = user;
+    // FIX: same toObject() safety conversion as register/me routes.
+    const userObj = user.toObject();
+    const { passwordHash: _, salt: __, ...safeUser } = userObj;
 
     res.status(200).json({
       message: 'Logged in successfully',
